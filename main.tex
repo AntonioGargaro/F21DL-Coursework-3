@@ -1,0 +1,52 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage{graphicx}
+\usepackage{cellspace}
+\setlength\cellspacetoplimit{4pt}
+\setlength\cellspacebottomlimit{4pt}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+
+\newcommand\cincludegraphics[2][]{\raisebox{-0.3\height}{\includegraphics[#1]{#2}}}
+
+\usepackage[english]{babel}
+ 
+\usepackage{minted}
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+\large\textbf{Data Mining and Machine Learning} \\
+\normalsize F21DL \\
+Due Date: 28/11/18  \\
+
+\input{content/preface.tex}
+
+\tableofcontents
+
+
+\newpage
+\input{content/decision-trees.tex}
+
+\newpage
+\input{content/linear-classifiers.tex}
+
+\newpage
+\input{content/neural.tex}
+
+\newpage
+\input{content/conclusion.tex}
+
+\newpage
+\input{content/appendix.tex}
+
+
+\end{document}
+
