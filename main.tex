@@ -4,12 +4,20 @@
 \usepackage{fullpage} % changes the margin
 \usepackage{graphicx}
 \usepackage{cellspace}
+\usepackage{placeins}
 \setlength\cellspacetoplimit{4pt}
 \setlength\cellspacebottomlimit{4pt}
 
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage[backend=biber,style=authoryear, natbib=true]{biblatex}
+\addbibresource{references.bib}
 \setcounter{secnumdepth}{4}
+
 
 \newcommand\cincludegraphics[2][]{\raisebox{-0.3\height}{\includegraphics[#1]{#2}}}
 
@@ -34,24 +42,31 @@ Due Date: 28/11/18  \\
 \tableofcontents
 
 
+\FloatBarrier
 \newpage
 \input{content/automation.tex}
 
+\FloatBarrier
 \newpage
 \input{content/decision-trees.tex}
 
+\FloatBarrier
 \newpage
 \input{content/linear-classifiers.tex}
 
+\FloatBarrier
 \newpage
 \input{content/neural.tex}
 
+\FloatBarrier
 \newpage
 \input{content/conclusion.tex}
 
+\FloatBarrier
 \newpage
 \input{content/appendix.tex}
 
+\printbibliography 
 
 \end{document}
 
