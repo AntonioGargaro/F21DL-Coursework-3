@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.UserClassifier 
+Relation:     fer2017-training_28698_rows_training_set
+Instances:    28698
+Attributes:   2305
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+
+Split on emotion AND pixel1000 (In Set): N1 2(383.0/222.0)
+Split on emotion AND pixel1000 (Not in Set)
+|   Split on emotion AND pixel1250 (In Set): N3 0(1000.0/617.0)
+|   Split on emotion AND pixel1250 (Not in Set)
+|   |   Split on emotion AND pixel1500 (In Set): N5 3(932.0/401.0)
+|   |   Split on emotion AND pixel1500 (Not in Set)
+|   |   |   Split on emotion AND pixel2000 (In Set): N7 3(541.0/91.0)
+|   |   |   Split on emotion AND pixel2000 (Not in Set): N8 3(25842.0/19862.0)
+
+Time taken to build model: 662.49 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.5 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1757               24.7535 %
+Incorrectly Classified Instances      5341               75.2465 %
+Kappa statistic                          0     
+Mean absolute error                      0.2363
+Root mean squared error                  0.3438
+Relative absolute error                 99.9991 %
+Root relative squared error            100      %
+Total Number of Instances             7098     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.133     0
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.015     1
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.143     2
+                 1.000    1.000    0.248      1.000    0.397      ?        0.500     0.248     3
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.174     4
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.115     5
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.172     6
+Weighted Avg.    0.248    0.248    ?          0.248    ?          ?        0.500     0.173     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+    0    0    0  943    0    0    0 |    a = 0
+    0    0    0  110    0    0    0 |    b = 1
+    0    0    0 1012    0    0    0 |    c = 2
+    0    0    0 1757    0    0    0 |    d = 3
+    0    0    0 1237    0    0    0 |    e = 4
+    0    0    0  817    0    0    0 |    f = 5
+    0    0    0 1222    0    0    0 |    g = 6
+
